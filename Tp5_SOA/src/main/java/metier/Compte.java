@@ -12,13 +12,13 @@ import java.util.Date;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Compte {
     int code;
-    double slode;
+    double solde;
     @XmlTransient
     Date dateCreation;
 
-    public Compte(int code, double slode, Date dateCreation) {
+    public Compte(int code, double solde, Date dateCreation) {
         this.code = code;
-        this.slode = slode;
+        this.solde = solde;
         this.dateCreation = dateCreation;
     }
 
@@ -35,11 +35,11 @@ public class Compte {
     }
 
     public double getSlode() {
-        return slode;
+        return solde;
     }
 
     public void setSlode(double slode) {
-        this.slode = slode;
+        this.solde = solde;
     }
 
     public Date getDateCreation() {
